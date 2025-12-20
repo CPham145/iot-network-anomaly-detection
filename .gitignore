@@ -1,9 +1,20 @@
+v# macOS system files
+.DS_Store
+
+# virtual environments
 venv/
+
+# environment variables
 .env
+
+# python cache
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-models/*.pkl
 
-# datasets
+# datasets (never commit raw data)
 data/*.csv
+
+# model artifacts (never commit binaries)
+models/*.joblib
+models/*.pkl
